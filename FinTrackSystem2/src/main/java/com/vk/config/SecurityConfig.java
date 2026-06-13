@@ -64,7 +64,7 @@ public class SecurityConfig {
     	
     	CorsConfiguration configuration = new CorsConfiguration();
     	
-    	configuration.setAllowedOriginPatterns(List.of("*"));
+    	configuration.setAllowedOrigins(List.of("https://fintrac-system-2141.netlify.app"));
     	configuration.setAllowedMethods(List.of("GET","POST","PUT","DELETE","OPTIONS"));
     	configuration.setAllowedHeaders(List.of("Authorization","Content-Type","Accept"));
     	configuration.setAllowCredentials(true);

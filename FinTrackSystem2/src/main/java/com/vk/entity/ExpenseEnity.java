@@ -45,11 +45,6 @@ public class ExpenseEnity {
 	@UpdateTimestamp
 	private LocalDateTime updatedAt;
 	
-	
-	@ManyToOne
-	@JoinColumn(name = "category_id",nullable = false)
-	private CategoryEntity category;
-	
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "profile_id",nullable = false)
 	private ProfileEntity profile;

@@ -1,19 +1,15 @@
 package com.vk.service;
 
+
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
-
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
-
 import com.vk.dto.IncomeDTO;
-import com.vk.entity.CategoryEntity;
 import com.vk.entity.IncomeEntity;
 import com.vk.entity.ProfileEntity;
-import com.vk.repository.CategoryRepository;
 import com.vk.repository.IncomeRepository;
-
 import lombok.RequiredArgsConstructor;
 
 @Service
@@ -22,17 +18,16 @@ public class IncomeService {
 	
 	
 	private final IncomeRepository incomeRepository;
-	private final CategoryRepository categoryRepository;
 	private final ProfileService profileService;
 	
 	
 	public IncomeDTO addIncome(IncomeDTO dto) {
 		
 		ProfileEntity profile = profileService.getCurrentProfile();
-		CategoryEntity category = categoryRepository.findById(dto.getCategoryId())
-				                                          .orElseThrow(()-> new RuntimeException("Category Not Found."));
 		
-		IncomeEntity newIncome = toEntity(dto, profile, category);
+				                                     
+		
+		IncomeEntity newIncome = toEntity(dto, profile);
 		         newIncome = incomeRepository.save(newIncome);
 		         
 		         return toDTO(newIncome);
@@ -106,7 +101,7 @@ public class IncomeService {
 	//helper method like model mapper we can use model mapper also 
 	
 	
-	private IncomeEntity toEntity(IncomeDTO dto,ProfileEntity profile,CategoryEntity category) {
+	private IncomeEntity toEntity(IncomeDTO dto,ProfileEntity profile) {
 		
 		
 		return IncomeEntity.builder()
@@ -115,7 +110,6 @@ public class IncomeService {
 				           .amount(dto.getAmount())
 				           .date(dto.getDate())
 				           .profile(profile)
-				           .category(category)
 				           .build();	
 	}
 	
@@ -127,8 +121,6 @@ public class IncomeService {
 				         .id(enity.getId())
 				         .name(enity.getName())
 				         .icon(enity.getIcon())
-				         .categoryId(enity.getCategory() != null ? enity.getCategory().getId() : null)
-				         .categoryName(enity.getCategory() != null ? enity.getCategory().getName() : "N/A")
 				         .amount(enity.getAmount())
 				         .date(enity.getDate())
 				         .createdAt(enity.getCreatedAt())

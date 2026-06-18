@@ -153,8 +153,11 @@ src/
 **Vishal Kolate**
 Java Full Stack Developer | Spring Boot · React.js · REST APIs · JWT · MySQL
 📍 Pune, Maharashtra, India
-🔗 [LinkedIn](www.linkedin.com/in/vishal-kolate/
-) | [Portfolio](#) | [GitHub](https://github.com/vishal-kolate07)
+🔗 [LinkedIn](#) | [Portfolio](#) | [GitHub](#)
 
 ---
+
+## 📄 License
+
+This project is licensed under the MIT License.
 

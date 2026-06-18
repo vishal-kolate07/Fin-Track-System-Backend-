@@ -109,23 +109,16 @@ FinTrac is designed to help users track their monthly income and expenses in rea
 
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/Fin-Track-System-Backend.git
+git clone(https://github.com/vishal-kolate07/Fin-Track-System-Backend-)
 
 # Navigate to project directory
 cd Fin-Track-System-Backend
-
-# Configure application.properties
-# Set your MySQL URL, username, password, JWT secret, and mail credentials
 
 # Build and run
 mvn spring-boot:run
 ```
 
 ### Frontend Setup
-
-```bash
-# Clone the frontend repository
-git clone https://github.com/<your-username>/Fin-Track-System-Frontend.git
 
 cd Fin-Track-System-Frontend
 
@@ -164,6 +157,3 @@ Java Full Stack Developer | Spring Boot · React.js · REST APIs · JWT · MySQL
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License.

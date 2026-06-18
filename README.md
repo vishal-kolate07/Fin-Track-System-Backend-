@@ -1,6 +1,5 @@
 # FinTrac – Finance Tracking System
 
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.x-green)
 ![React](https://img.shields.io/badge/React-18.x-blue)
 ![MySQL](https://img.shields.io/badge/MySQL-Aiven_Cloud-orange)

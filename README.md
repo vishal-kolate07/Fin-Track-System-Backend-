@@ -128,36 +128,29 @@ npm start
 
 ---
 
-## 📁 Project Structure (Backend)
+# 📁 Project Structure
 
+Frontend
+```
 src/
+├── components/
+├── pages/
+├── services/
+├── context/
+└── App.js
+```
 
-├── controller/       # REST Controllers (Income, Expense, Category, Dashboard, Filter, Excel, Email, Profile)
-
-├── service/          # Business logic layer
-
-├── repository/       # Spring Data JPA repositories
-
-├── entity/           # JPA Entity classes
-
-├── dto/              # Data Transfer Objects
-
-├── security/         # JWT filter, SecurityConfig
-
-└── config/           # CORS, Mail, App configuration
-
----
-
-## 👨‍💻 Developer
-
-**Vishal Kolate**
-Java Full Stack Developer | Spring Boot · React.js · REST APIs · JWT · MySQL
-📍 Pune, Maharashtra, India
-🔗 [LinkedIn](#) | [Portfolio](#) | [GitHub](#)
+Backend
+```
+src/main/java
+├── controller
+├── service
+├── repository
+├── entity
+├── dto
+├── security
+└── config
+```
 
 ---
-
-## 📄 License
-
-This project is licensed under the MIT License.
 

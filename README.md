@@ -88,7 +88,7 @@ FinTrac is designed to help users track their monthly income and expenses in rea
 | Layer | URL |
 |---|---|
 | Frontend (Netlify) | https://fintrac-system-2141.netlify.app |
-| Backend API (Render) | *(Your Render base URL)* |
+| Backend API (Render) | https://fin-track-system-backend.onrender.com/api/v1.0/ |
 | Database | Aiven Cloud – MySQL (private) |
 
 > **Note:** The backend is hosted on Render's free tier. On first request after inactivity, the server may take 30–60 seconds to wake up. Please wait and retry if you see a connection error.

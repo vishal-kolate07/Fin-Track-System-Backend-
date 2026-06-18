@@ -117,40 +117,31 @@ cd Fin-Track-System-Backend
 # Build and run
 mvn spring-boot:run
 ```
-
-### Frontend Setup
-
-cd Fin-Track-System-Frontend
-
-npm install
-npm start
-```
-
 ---
 
-# 📁 Project Structure
-
-Frontend
-```
+### 📁 Project Structure (Backend)
 src/
-├── components/
-├── pages/
-├── services/
-├── context/
-└── App.js
-```
 
-Backend
-```
-src/main/java
-├── controller
-├── service
-├── repository
-├── entity
-├── dto
-├── security
-└── config
-```
+├── controller/       # REST Controllers (Income, Expense, Category, Dashboard, Filter, Excel, Email, Profile)
+
+├── service/          # Business logic layer
+
+├── repository/       # Spring Data JPA repositories
+
+├── entity/           # JPA Entity classes
+
+├── dto/              # Data Transfer Objects
+
+├── security/         # JWT filter, SecurityConfig
+
+└── config/           # CORS, Mail, App configuration
 
 ---
 
+## 👨‍💻 Developer
+
+**Vishal Kolate**
+Java Full Stack Developer | Spring Boot · React.js · REST APIs · JWT · MySQL
+📍 Pune, Maharashtra, India
+
+---
